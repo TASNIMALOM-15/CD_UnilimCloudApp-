@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Unlim Cloud</string>
+    <string name="offline_title">ইন্টারনেট সংযোগ নেই</string>
+    <string name="offline_message">সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।</string>
+    <string name="retry">আবার চেষ্টা করুন</string>
+    <string name="press_back_again">বের হতে আবার Back চাপুন</string>
+    <string name="download_started">ডাউনলোড শুরু হয়েছে…</string>
+    <string name="download_saved">Downloads ফোল্ডারে সেভ হয়েছে</string>
+    <string name="download_failed">ডাউনলোড ব্যর্থ হয়েছে</string>
+</resources>
