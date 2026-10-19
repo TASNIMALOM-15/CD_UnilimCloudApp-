@@ -1,0 +1,15 @@
+*.iml
+.gradle/
+local.properties
+.idea/
+build/
+captures/
+.cxx/
+*.apk
+*.aab
+*.jks
+*.keystore
+# CI এগুলো নিজে তৈরি করে (TDLib সোর্স থেকে build হয়)
+app/src/main/jniLibs/
+app/src/main/java/org/drinkless/
+tdlib-prebuilt/
