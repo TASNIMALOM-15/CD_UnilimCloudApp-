@@ -1,0 +1,106 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.aboutlibraries.android)
+}
+
+// Kotlin compilation is provided by AGP's built-in Kotlin support (default since AGP 9.0);
+// the separate org.jetbrains.kotlin.android plugin is no longer applied. The Compose
+// compiler plugin is still required until AGP bundles it.
+
+android {
+    namespace = "compress.joshattic.us"
+    compileSdk {
+        version = release(37)
+    }
+
+    defaultConfig {
+        applicationId = "compress.joshattic.us"
+        minSdk = 24
+        targetSdk = 37
+        versionCode = 29
+        versionName = "1.6.6"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        // Fixed personal key so every new build can be installed over the previous one
+        create("custom") {
+            storeFile = file("custom-release.jks")
+            storePassword = "compressor"
+            keyAlias = "custom"
+            keyPassword = "compressor"
+        }
+    }
+
+    lint {
+        // Added translations only exist in English; do not fail the release build on that
+        checkReleaseBuilds = false
+        abortOnError = false
+    }
+
+    buildTypes {
+        debug {
+            // Lets this custom build install next to the original app
+            applicationIdSuffix = ".custom"
+            versionNameSuffix = "-custom"
+        }
+        release {
+            applicationIdSuffix = ".custom"
+            versionNameSuffix = "-custom"
+            signingConfig = signingConfigs.getByName("custom")
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+    // Built-in Kotlin derives the Kotlin jvmTarget from compileOptions, so the
+    // deprecated kotlinOptions block is no longer needed.
+    buildFeatures {
+        compose = true
+        buildConfig = true
+    }
+    dependenciesInfo {
+        includeInBundle = false
+        includeInApk = false
+    }
+}
+
+dependencies {
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.documentfile)
+    implementation(libs.androidx.work.runtime)
+    implementation(libs.aboutlibraries.core)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.activity.compose)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.compose.ui)
+    implementation(libs.androidx.compose.ui.graphics)
+    implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.compose.material.icons.extended)
+    implementation(libs.androidx.media3.transformer)
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.effect)
+    implementation(libs.androidx.media3.common)
+    implementation(libs.androidx.compose.animation)
+    implementation(libs.androidx.ui)
+    testImplementation(libs.junit)
+    testImplementation("org.mockito:mockito-core:5.5.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:6.3.0")
+    testImplementation("org.robolectric:robolectric:4.11.1")
+    testImplementation("androidx.test:core:1.5.0")
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
+    debugImplementation(libs.androidx.compose.ui.tooling)
+    debugImplementation(libs.androidx.compose.ui.test.manifest)
+}

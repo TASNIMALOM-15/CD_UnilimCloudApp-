@@ -1,0 +1,327 @@
+<resources>
+    <string name="app_name">Compressor</string>
+    <string name="title_compressor">Compressor</string>
+    <string name="share">Share</string>
+    <string name="saved">Saved</string>
+    <string name="saving">Saving…</string>
+    <string name="save_action">Save</string>
+    <string name="save_to_photos">Save to Photos</string>
+    <string name="compress_another_video">Compress Another Video</string>
+    <string name="buy_coffee">☕ Happy with Compressor? Buy me a coffee!</string>
+    <string name="share_video_title">Share Compressed Video</string>
+    <string name="share_error">Cannot share: %1$s</string>
+    <string name="original">Original</string>
+    <string name="estimated">Estimated</string>
+    
+    <!-- Presets -->
+    <string name="preset_high">High</string>
+    <string name="preset_high_desc">Optimized bitrate only</string>
+    <string name="preset_medium">Medium</string>
+    <string name="preset_medium_desc">1080p • 30fps</string>
+    <string name="preset_low">Low</string>
+    <string name="preset_low_desc">720p • 30fps</string>
+    
+    <string name="quality_preset">Change Video Quality</string>
+    <string name="header_quality_presets">Quality Presets</string>
+    <string name="target_size_limits">Target Size Presets</string>
+    <string name="advanced_options">Advanced Options</string>
+    <string name="target_size">Target Size</string>
+    <string name="encoding">Encoding</string>
+    <string name="av1_high_efficiency">AV1 (Fast • Efficient)</string>
+    <string name="h265_efficient">H.265 (Efficient)</string>
+    <string name="h264_compat">H.264 (Compat)</string>
+    
+    <string name="delete_original">Delete Original Video</string>
+    <string name="delete_original_success">Video deleted successfully</string>
+    <string name="delete_original_failed">Failed to delete video</string>
+    <string name="delete_confirm_title">Delete Original?</string>
+    
+    <string name="info_title">Device &amp; App Info</string>
+    <string name="info_copy_clipboard">Copy to Clipboard</string>
+    <string name="info_copied">Copied to clipboard</string>
+    <string name="show_bitrate">Show Bitrate</string>
+    <string name="bitrate_unit_mbps">Mbps</string>
+
+    <string name="resolution">Resolution</string>
+    <string name="audio_options">Audio Options</string>
+    <string name="audio_bitrate">Audio Bitrate</string>
+    <string name="volume">Volume</string>
+    <string name="remove_audio">Remove Audio</string>
+    <string name="framerate">Framerate</string>
+    <string name="fps_60">60fps</string>
+    <string name="fps_30">30fps</string>
+    <string name="start_compression">Start Compression</string>
+    <string name="warning_hdr_tone_mapped">HDR video was tone-mapped to SDR to avoid encoder compatibility issues on this device. Use AV1 if you need to preserve HDR.</string>
+    <string name="warning_details">Warning Details</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="target_size_warning">Target size not possible, tap for info</string>
+    <string name="target_size_warning_title">Target size may not be possible</string>
+    <string name="target_size_warning_details">Some settings must be reduced to reach the requested target size.</string>
+    <string name="accept_suggestion">Accept suggestion</string>
+    <string name="accept_all">Accept All</string>
+    <string name="close">Close</string>
+
+    <string name="error_prefix">Error: %1$s</string>
+    <string name="select_video">Select a video to compress</string>
+    <string name="add_video_desc">Add Video</string>
+    <string name="total_saved">You\'ve saved %1$s of storage with Compressor</string>
+
+    <string name="slider_less_space">Less Space</string>
+    <string name="slider_balanced">Balanced</string>
+    <string name="slider_high_quality">Higher Quality</string>
+    
+    <string name="compression_complete">Compression Complete!</string>
+    <string name="compressing_video_label">COMPRESSING VIDEO</string>
+    <string name="cancel">Cancel</string>
+    
+    <!-- Errors -->
+    <string name="error_file_lost">File lost</string>
+    <string name="error_export_failed">Export failed: %1$s</string>
+    <string name="error_save_failed">Save failed: %1$s</string>
+    <string name="error_gallery_entry">Could not create gallery entry</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_codec_unsupported">This video codec is not supported by your device hardware.</string>
+    <string name="error_decoder_config_unsupported">This device can\'t decode this source video configuration.</string>
+    <string name="error_encoder_config_unsupported">This device can\'t encode the selected output configuration.</string>
+    <string name="error_decoder_config_unsupported_details">This device can\'t decode this source video configuration (%1$dx%2$d @ %3$.1ffps, %4$s).</string>
+    <string name="error_encoder_config_unsupported_details">This device can\'t encode the selected output settings. Tried: %1$s.</string>
+    <string name="warning_codec_fallback_h264">Your selected codec is not supported for this output on this device. Falling back to H.264 for compatibility.</string>
+    <string name="warning_quality_fallback">This device can\'t encode your selected settings. Falling back to H.264 at %1$dp and %2$dfps.</string>
+
+    <!-- Size Presets -->
+    <string name="size_discord">Discord</string>
+    <string name="size_github">GitHub</string>
+    <string name="size_email">Email</string>
+    <string name="size_stories">Stories • Nitro Basic</string>
+    <string name="size_messenger">Messenger • BlueSky</string>
+    <string name="size_nitro">Nitro • Reels</string>
+    <string name="size_twitter">Twitter/X</string>
+    <string name="size_whatsapp">WhatsApp • Telegram</string>
+    <string name="size_tg_premium">TG Premium • Feed</string>
+    <string name="size_x_premium">X Premium</string>
+    <string name="preset_summary_format">%1$s • %2$s • %3$s size • %4$s audio</string>
+    
+    <string name="unit_gb">GB</string>
+    <string name="unit_mb">MB</string>
+    <string name="unit_kb">KB</string>
+
+    <!-- Resolutions -->
+    <string name="res_8k">8K</string>
+    <string name="res_4k">4K</string>
+    <string name="res_2k">2K</string>
+    <string name="res_1080p">1080p</string>
+    <string name="res_720p">720p</string>
+    <string name="res_540p">540p</string>
+    <string name="res_480p">480p</string>
+    <string name="res_three_quarters">¾</string>
+    <string name="res_half">½</string>
+    <string name="res_quarter">¼</string>
+
+    <string name="compression_failed_title">Compression Failed</string>
+    <string name="compression_larger_error">The compressed video is larger than the original.\nThe video may already be highly compressed or have a very low bitrate.</string>
+    <string name="error_huawei_muxer">This issue may be caused by your specific device. Please try restarting your device.</string>
+    <string name="try_again">Try Again</string>
+    <string name="save_anyway">Save anyway</string>
+    
+    <string name="report_error">Report Error</string>
+    <string name="error_details">Error Details</string>
+    <string name="copy_logs">Copy Logs</string>
+    <string name="open_issue_tracker">Open Issue Tracker</string>
+    <string name="view_on_github">View on GitHub</string>
+    <string name="buy_me_a_coffee">Buy Me a Coffee</string>
+    <string name="open_source_licenses">Open source licenses</string>
+
+    <string name="info_content_desc">Info</string>
+    <string name="tab_presets">Presets</string>
+    <string name="tab_video">Video</string>
+    <string name="tab_audio">Audio</string>
+    
+    <!-- Settings Screen & i18n -->
+    <string name="settings_title">Settings</string>
+    <string name="search_settings_hint">Search settings</string>
+    <string name="search_icon_desc">Search</string>
+    <string name="clear_search_desc">Clear search</string>
+    <string name="no_settings_found">No settings found</string>
+    <string name="about_compressor_title">About Compressor</string>
+    <string name="basic_info_header">Basic Info</string>
+    <string name="display_settings_title">General</string>
+    <string name="general_settings_title">General</string>
+    <string name="settings_content_desc">Settings</string>
+    <string name="back">Back</string>
+
+    <string name="category_general_subtitle">Auto-save, save location, bitrate, units</string>
+    <string name="category_display_subtitle">Auto-save, save location, bitrate, units</string>
+    <string name="category_presets_subtitle">Preset configuration options</string>
+    <string name="category_video_subtitle">Adjust default video settings</string>
+    <string name="category_audio_subtitle">Adjust default audio settings</string>
+    <string name="version_format">Version %1$s</string>
+    
+    <string name="header_basic_info">Basic info</string>
+    <string name="header_hardware_codecs">Hardware &amp; codecs</string>
+    <string name="header_links_actions">Links &amp; actions</string>
+    <string name="info_app_name">App name</string>
+    <string name="info_app_version">App version</string>
+    <string name="codecs_supported_count">%1$d codecs supported on this device</string>
+    <string name="enable_all_codecs">Enable all codecs</string>
+    <string name="software_encoding">Software Encoding</string>
+    
+    <string name="header_general_options">General options</string>
+    <string name="header_display_options">Display options</string>
+    <string name="auto_save_photos_title">Automatically save</string>
+    <string name="auto_save_photos_subtitle">Automatically save compressed videos after compression</string>
+    <string name="output_location_title">Save location</string>
+    <string name="output_location_default">Photos (Movies/Compressor)</string>
+    <string name="output_location_subtitle">Where compressed videos are saved by default</string>
+    <string name="output_location_reset_title">Use default (Photos)</string>
+    <string name="output_location_reset_subtitle">Reset save location to Movies/Compressor</string>
+
+    <string name="filename_builder_title">Filename builder</string>
+    <string name="filename_builder_subtitle">Drag and drop chips to rearrange, add and remove.</string>
+    <string name="filename_placeholder_prefix">prefix…</string>
+    <string name="filename_placeholder_suffix">suffix…</string>
+    <string name="filename_drag_release_remove">Release outside box to remove chip</string>
+    <string name="filename_drag_over_reorder">Drag over position to reorder</string>
+    <string name="filename_drag_release_add">Release to add chip here</string>
+    <string name="filename_drag_into_area">Drag chip into this area</string>
+    <string name="filename_available_chips_title">Available dynamic chips (Drag &amp; drop into the area above)</string>
+    <string name="filename_all_chips_added">All available chips have been added.</string>
+    <string name="filename_prefix_label">Prefix</string>
+    <string name="filename_prefix_placeholder">Enter prefix...</string>
+    <string name="filename_active_tokens_title">Selected tokens</string>
+    <string name="filename_available_tokens_title">Tap to add token</string>
+    <string name="filename_preview_label">Preview:</string>
+    <string name="filename_reset_button">Reset filename format</string>
+
+    <string name="token_original_name">Original Name</string>
+    <string name="token_compressed">Compressed</string>
+    <string name="token_date">Date</string>
+    <string name="token_time">Time</string>
+    <string name="token_random">Random #</string>
+    <string name="token_resolution">Resolution</string>
+    <string name="token_framerate">Framerate</string>
+    <string name="token_bitrate">Video Bitrate</string>
+    <string name="token_audio_bitrate">Audio Bitrate</string>
+    <string name="token_encoding">Encoding</string>
+    <string name="token_audio_status">Audio Status</string>
+    <string name="token_preset">Preset</string>
+    <string name="save_to_folder">Save</string>
+    <string name="show_bitrate_subtitle">Show bitrate values on original and estimated sizes</string>
+    <string name="bitrate_unit_mbps_subtitle">Display bitrate in Mbps</string>
+    <string name="bitrate_unit_kbps_subtitle">Display bitrate in kbps</string>
+    <string name="show_storage_saved_title">Show storage saved on main page</string>
+    <string name="show_storage_saved_subtitle">Display total storage space saved at the bottom of main screen</string>
+    <string name="show_target_size_preset_title">Show target size preset</string>
+    <string name="show_target_size_preset_subtitle">Show quality presets tab during video setup</string>
+    
+    <string name="placeholder_video_desc">Video compression and codec default options are coming soon in a future update.</string>
+    <string name="placeholder_audio_desc">Audio bitrate and channel default options are coming soon in a future update.</string>
+    <string name="placeholder_presets_desc">Preset configuration default options are coming soon in a future update.</string>
+
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="enable_all_codecs_warn_dialog">Enabling all codecs may result in poor performance, encoding failures, thermonuclear war, melting batteries and abnormally warm hands</string>
+    <string name="warn_battery_life">I HATE good battery life</string>
+    <string name="warn_hands_melt">I LOVE when my hands melt</string>
+    <string name="warn_time">Time is no object</string>
+    <string name="warn_crashes">I LOVE when an app crashes constantly</string>
+    <string name="warn_bug_reports">I will NOT open any bug reports while this is on</string>
+    <string name="warning_count">%1$d Warning(s) - Tap for Details</string>
+    <string name="step_away_codecs">You are now %1$d steps away from enabling all codecs.</string>
+    <string name="info_device">Device</string>
+    <string name="info_android">Android Version</string>
+    <string name="info_chipset">Chipset / SoC</string>
+    <string name="info_ram">RAM</string>
+    <string name="info_gpu">GPU</string>
+    <string name="header_device_workarounds">Device-specific workarounds</string>
+    <string name="workaround_mediatek_vbr">MediaTek forced VBR</string>
+    <string name="workaround_pixel10_hdr">Pixel 10 Series HDR Tone-Map</string>
+    <string name="workaround_huawei_muxer">Huawei Muxer Fallback</string>
+    <string name="workaround_none">None</string>
+    <string name="info_supported_codecs">Supported Codecs</string>
+
+    <!-- Presets Management Keys -->
+    <string name="reset_to_default">Reset to Default</string>
+    <string name="add_preset">Add Preset</string>
+    <string name="reset_presets_to_default">Reset Presets to Default</string>
+    <string name="reset_presets_confirm_title">Reset Target Size Presets?</string>
+    <string name="reset_presets_confirm_message">This will restore all default target size presets and remove custom ones.</string>
+    <string name="add_size_preset_title">Add Size Preset</string>
+    <string name="edit_size_preset_title">Edit Size Preset</string>
+    <string name="preset_label_hint">Preset Label (e.g. Discord, Email)</string>
+    <string name="target_size_mb_hint">Target Size (in MB)</string>
+
+    <!-- Video & Audio Settings Keys -->
+    <string name="header_default_video_options">Default Video Options</string>
+    <string name="header_default_audio_options">Default Audio Options</string>
+    <string name="default_video_codec">Default Video Codec</string>
+    <string name="default_video_codec_desc">Select the default video encoder for new compressions</string>
+    <string name="default_resolution">Default Resolution</string>
+    <string name="default_framerate">Default Framerate</string>
+    <string name="default_size_ratio">Default Target Size Ratio</string>
+    <string name="default_audio_bitrate">Default Audio Bitrate</string>
+    <string name="default_mute_audio">Mute Audio by Default</string>
+    <string name="default_mute_audio_desc">Automatically strip audio tracks from new videos</string>
+    <string name="default_audio_volume">Default Audio Volume</string>
+    <string name="reset_video_defaults">Reset Video Defaults</string>
+    <string name="reset_audio_defaults">Reset Audio Defaults</string>
+
+    <!-- What's New Dialog -->
+    <string name="whats_new_title">What\'s new in Compressor</string>
+    <string name="whats_new_version">Version %1$s</string>
+    <string name="whats_new_button">Got it</string>
+    <string name="whats_new_1_title">Improved Accessibility</string>
+    <string name="whats_new_1_desc">Compressor now scales cleanly to work well at any display or font size</string>
+    <string name="whats_new_2_title">Bug Fixes</string>
+    <string name="whats_new_2_desc">Cleared out more bugs to make Compressor as stable as ever</string>
+    <string name="custom_resolution_hint">Custom resolution (short side)</string>
+    <string name="custom_fps_hint">Custom framerate</string>
+    <string name="custom_audio_bitrate_hint">Custom audio bitrate</string>
+    <string name="custom_size_ratio_hint">Custom size ratio</string>
+    <string name="notif_channel_name">Compression progress</string>
+    <string name="notif_compressing">Compressing video</string>
+    <string name="notif_compressing_queue">Compressing video %1$d of %2$d</string>
+    <string name="notif_done_title">Compression finished</string>
+    <string name="notif_done_text">%1$d video(s) compressed</string>
+    <string name="resume_unavailable">The unfinished video is no longer accessible. Please pick it again.</string>
+    <string name="resume_title">Resume compression?</string>
+    <string name="resume_message">An unfinished compression was found (%1$d video(s) left). The interrupted video will restart from its beginning.</string>
+    <string name="resume_action">Resume</string>
+    <string name="resume_discard">Discard</string>
+    <string name="queue_banner">Queue: %1$d videos. These settings will be applied to all of them.</string>
+    <string name="history_title">History</string>
+    <string name="history_empty">No compressed videos yet.</string>
+    <string name="history_clear">Clear history</string>
+    <string name="history_summary_title">Total</string>
+    <string name="theme_title">Theme from image</string>
+    <string name="theme_subtitle">Use a gallery image to colour the app</string>
+    <string name="theme_description">Pick any image from your gallery. The app takes its most prominent colour and builds the whole colour theme from it.</string>
+    <string name="theme_pick_image">Choose image</string>
+    <string name="theme_reset">Reset to default</string>
+    <string name="history_subtitle">Compressed videos and saved space</string>
+    <string name="custom_button_hint">Type a value and press Done to add it as a button • long-press a custom button to delete it</string>
+    <string name="custom_button_removed">Removed %1$s</string>
+    <string name="saved_combos_title">Saved combos</string>
+    <string name="save_combo_button">Save this combo settings</string>
+    <string name="combo_saved">Combo saved</string>
+    <string name="combo_exists">This combo is already saved</string>
+    <string name="save_as_default">Save as default</string>
+    <string name="defaults_saved">Default video options saved</string>
+    <string name="history_cannot_play">No video player found for this file</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_clear_history">Do you want to delete all history?</string>
+    <string name="dialog_cancel_compression">Do you want to cancel the compression?</string>
+    <string name="notif_alert_channel_name">Compression alerts</string>
+    <string name="notif_interrupted_title">Compression was interrupted</string>
+    <string name="notif_interrupted_text">Tap to continue the unfinished compression</string>
+    <string name="transfer_title">Import / Export</string>
+    <string name="transfer_subtitle">Backup or restore data, history and settings</string>
+    <string name="transfer_description">Export saves all your settings, presets and history into one JSON file. Import loads such a file back.</string>
+    <string name="transfer_export">Export data</string>
+    <string name="transfer_import">Import data</string>
+    <string name="transfer_import_warning">Importing will replace your current settings and history. Continue?</string>
+    <string name="transfer_export_ok">Data exported</string>
+    <string name="transfer_export_failed">Export failed</string>
+    <string name="transfer_import_ok">Data imported</string>
+    <string name="transfer_import_failed">Import failed: not a valid backup file</string>
+    <string name="transfer_busy">Not possible while compressing</string>
+</resources>
